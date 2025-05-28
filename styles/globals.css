@@ -1,0 +1,62 @@
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base HTML and Body styles */
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+  /* If you want full page scroll snapping for sections: */
+  /* scroll-snap-type: y mandatory; */ 
+}
+
+body {
+  @apply font-inter text-neutral-800; /* Default font and text color */
+  background: linear-gradient(135deg, #fefefe 0%, #fdf4ff 50%, #f0f9ff 100%); /* Global background gradient */
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings default font */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-poppins;
+}
+
+/* Custom scrollbar (optional, for a more branded feel) */
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f9ff; /* Lightest color from gradient */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4b5fd; /* A soft purple from neutral palette */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a78bfa; /* Darker purple on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c4b5fd #f0f9ff;
+}
+
+/* Ensure sections take up at least full viewport height and snap correctly */
+section {
+  min-height: 100vh; /* Or use h-screen in Tailwind if preferred */
+  /* scroll-snap-align: start; is applied via snap-start Tailwind class */
+}
+
+/* Fix for Framer Motion an Next.js Link issue if it arises with page transitions */
+/* html { overflow: auto } */

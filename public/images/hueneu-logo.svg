@@ -1,0 +1,16 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .hueneu-text {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 38px;
+      letter-spacing: -0.5px;
+    }
+  </style>
+  <text x="10" y="42" class="hueneu-text" fill="#6d28d9">
+    hueneu
+  </text>
+  <!-- Optional: "Hue" element - a subtle dot or underline -->
+  <circle cx="175" cy="20" r="7" fill="#ec4899"/>
+  <rect x="10" y="50" width="50" height="3" fill="#06b6d4" rx="1.5" />
+</svg>

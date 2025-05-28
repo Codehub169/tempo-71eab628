@@ -24,7 +24,7 @@ const HeroSection = () => {
     visible: { 
       scale: 1, 
       opacity: 1, 
-      transition: { duration: 1, ease: [0.6, 0.01, -0.05, 0.95], delay: 0.2 } 
+      transition: { duration: 1, ease: [0.6, 0.01, 0.05, 0.95], delay: 0.2 } 
     },
   };
 
